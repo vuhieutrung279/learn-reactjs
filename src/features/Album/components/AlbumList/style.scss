@@ -1,0 +1,26 @@
+.list-album {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    .album-item {
+        text-align: center;
+        margin: 0 10px;
+        cursor: pointer;
+        img {
+            width: 200px;
+            border: 2px solid rgba(0, 108, 250, 0.2);
+            border-radius: 15px;
+        }
+        h3 {
+            color:rgba(250, 58, 0, 1);
+        }
+        &.listened {
+            img {
+                filter: grayscale(100%);
+            }
+            h3 {
+                color: #000;
+            }
+        }
+    }
+}

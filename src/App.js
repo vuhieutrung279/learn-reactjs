@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Link, Redirect, Route, Switch } from 'react-router-dom';
+import AlbumFeature from './features/Album';
+import Clock from './features/Clock';
+import PostList from './features/PostList';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vu Hieu Trung
-        </a>
-      </header>
+      <h2>Header</h2>
+      <Link to="/clock">Clock</Link>
+      <Link to="/post-list">Post List</Link>
+      <Link to="/album">Album</Link>
+      <Switch>
+        <Route path="/clock" component={Clock} exact />
+        <Route path="/post-list" component={PostList} />
+        <Route path="/album" component={AlbumFeature} />
+        <Redirect from="/test" to="/clock" />
+      </Switch>
+      <h2>Footer</h2>
     </div>
   );
 }

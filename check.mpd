@@ -7,8 +7,8 @@
      xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
      profiles="urn:mpeg:dash:profile:isoff-live:2011"
      type="dynamic"
-     minimumUpdatePeriod="PT2.229S" 
-     publishTime="2023-07-21T06:48:45.728Z" 
+     minimumUpdatePeriod="PT3.999S" 
+     publishTime="2023-07-21T07:00:27.957Z" 
      availabilityStartTime="2023-07-17T05:47:47.576Z" 
      timeShiftBufferDepth="PT32.0S"
      suggestedPresentationDelay="PT8.0S" 
@@ -16,7 +16,7 @@
 <ProgramInformation>
     <Title>k1sport2_hls.smil</Title>
 </ProgramInformation>
-<BaseURL>https://smarttv-drm.fptplay.net/MTA4NDUxNDB8azFzcG9ydDJfaGxzLnNtaWx8ZnB0fDE2ODk5MjIxMjZ8NDIuMTEzLjUyLjE5MHwxZWQ0OGUwMmEzZTdlODg0MTJhNGZmZGE0Y2RjN2Y0Mg/drmkplus/k1sport2_hls.smil/</BaseURL>
+<BaseURL>https://smarttv-drm.fptplay.net/MTA4NDUxNDB8azFzcG9ydDJfaGxzLnNtaWx8ZnB0fDE2ODk5MjI4MDh8NDIuMTEzLjUyLjE5MHw0NTUxNDQ1MjU4MjViNzY4Y2Q5ZWRmMTQzMmZjMDM2ZA/drmkplus/k1sport2_hls.smil/</BaseURL>
 <Period id="0" start="PT0.0S">
     <AdaptationSet id="0" group="1" mimeType="video/mp4" maxWidth="1280" maxHeight="720" par="16:9" frameRate="25" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
         <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="36220aca-b52d-31f6-9bcb-ed298d8ee574"/>
@@ -29,7 +29,7 @@
         </ContentProtection>
         <SegmentTemplate timescale="90000" media="segment_ctvideo_cfm4s_rid$RepresentationID$_cs$Time$_mpd.m4s" initialization="segment_ctvideo_cfm4s_rid$RepresentationID$_cinit_mpd.m4s">
             <SegmentTimeline>
-                <S t="31430149200" d="360000"/>
+                <S t="31493509200" d="360000"/>
                 <S d="360000"/>
                 <S d="360000"/>
                 <S d="360000"/>
@@ -54,7 +54,7 @@
         </ContentProtection>
         <SegmentTemplate timescale="48000" media="segment_ctaudio_cfm4s_rid$RepresentationID$_cs$Time$_mpd.m4s" initialization="segment_ctaudio_cfm4s_rid$RepresentationID$_cinit_mpd.m4s">
             <SegmentTimeline>
-                <S t="16762746816" d="191472"/>
+                <S t="16796538816" d="191472"/>
                 <S d="192528"/>
                 <S d="191472"/>
                 <S d="192528"/>
@@ -68,5 +68,5 @@
         </Representation>
     </AdaptationSet>
 </Period>
-<UTCTiming schemeIdUri="urn:mpeg:dash:utc:direct:2014" value="2023-07-21T06:48:45.728Z"/>
+<UTCTiming schemeIdUri="urn:mpeg:dash:utc:direct:2014" value="2023-07-21T07:00:27.957Z"/>
 </MPD>

@@ -3,11 +3,11 @@
 	availabilityStartTime="1970-01-01T00:00:00Z" 
 	id="Config part of url maybe?" 
 	maxSegmentDuration="PT8S" 
-	minBufferTime="PT1S" 
-	minimumUpdatePeriod="P100Y" 
+	minBufferTime="PT1.0S" 
+	minimumUpdatePeriod="PT500S" 
 	profiles="urn:mpeg:dash:profile:full:2011,http://www.dashif.org/guidelines/low-latency-live-v5" 
 	publishTime="2023-07-21T07:17:11Z" 
-	timeShiftBufferDepth="PT5M" 
+	timeShiftBufferDepth="PT20.0S" 
 	type="dynamic">
  <BaseURL>https://livesim.dashif.org/livesim/sts_1689923830/sid_95b76c07/chunkdur_1/ato_7/testpic4_8s/</BaseURL>
 <ServiceDescription id="0">

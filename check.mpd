@@ -20,6 +20,7 @@
 	streamMediaId="E26D3FB1BB4080746B650E1D6CCE0DC2" 
 	streamDenied="MTIz" 
 	streamSignal="8AC4176EBF50668603E2035AE35A3D78">
+	<BaseURL>https://fplstream.fptplay.net/</BaseURL>
 	<Period id="20230720081929" start="PT4H35M38.3S">
 		<AdaptationSet mimeType="video/mp4" startWithSAP="1" id="0" segmentAlignment="true" contentType="video" bitstreamSwitching="true">
 			<ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="16FFD99A-AB61-465C-A91D-2DCDEC372D9C" value="cenc"></ContentProtection>

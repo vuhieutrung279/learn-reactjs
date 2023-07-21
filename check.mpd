@@ -30,5 +30,15 @@
 			<Representation id="720p50" codecs="avc1.64002a" bandwidth="3800000" width="1280" height="720" frameRate="50/1"></Representation>
 			<Representation id="1080p50" codecs="avc1.64002a" bandwidth="5000000" width="1920" height="1080" frameRate="50/1"></Representation>
 		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1" bitstreamSwitching="true" lang="vie">
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+			<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+			<SegmentTemplate timescale="1000000" duration="2000000" initialization="9aaa4b4e-b227-4f62-8a54-62500f666401/$RepresentationID$-870ef9ff-init.m4s" media="9aaa4b4e-b227-4f62-8a54-62500f666401/$RepresentationID$-870ef9ff-$Number%01d$.m4s" startNumber="1">
+			</SegmentTemplate>
+			<Representation id="480p50_audio_0" codecs="mp4a.40.2" bandwidth="128000" audioSamplingRate="48000"></Representation>
+			<Representation id="720p50_audio_0" codecs="mp4a.40.2" bandwidth="128000" audioSamplingRate="48000"></Representation>
+			<Representation id="1080p50_audio_0" codecs="mp4a.40.2" bandwidth="128000" audioSamplingRate="48000"></Representation>
+		</AdaptationSet>
 	</Period>
+	<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-xsdate:2014" value="https://time.akamai.com?iso&amp;ms"/>
 </MPD>

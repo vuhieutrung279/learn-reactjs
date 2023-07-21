@@ -20,34 +20,19 @@
 	streamDenied="MTIz"
 	streamSignal="2E759E815E020BBF54BC5D470627E6D3">
 	<BaseURL>https://kplus-livecdn.fptplay.net/live/k-sport2-test/live/</BaseURL>
-	<Period id="20230720031457" start="PT0.0S">
+	<Period id="20230719092121" start="PT0.0S">
 		<AdaptationSet id="0" contentType="video" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" bitstreamSwitching="true">
 			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
-			<SegmentTemplate timescale="90000" initialization="cf610d30-b1d6-4575-839a-4da5c92dc7bd/$RepresentationID$-79389ee3-init.m4s" media="cf610d30-b1d6-4575-839a-4da5c92dc7bd/$RepresentationID$-79389ee3-$Number%01d$.m4s" startNumber="156">
-				<SegmentTimeline>
-					<S t="55800000" d="360000" r="9"/>
-				</SegmentTimeline>
+			<SegmentTemplate timescale="1000000" duration="2000000" availabilityTimeOffset="1.900" availabilityTimeComplete="false" initialization="9aaa4b4e-b227-4f62-8a54-62500f666401/$RepresentationID$-870ef9ff-init.m4s" media="9aaa4b4e-b227-4f62-8a54-62500f666401/$RepresentationID$-870ef9ff-$Number%01d$.m4s" startNumber="1">
 			</SegmentTemplate>
 			<Representation id="480p50" codecs="avc1.64002a" bandwidth="1500000" width="854" height="480" frameRate="50/1"></Representation>
 			<Representation id="720p50" codecs="avc1.64002a" bandwidth="3800000" width="1280" height="720" frameRate="50/1"></Representation>
-			<Representation id="1080p50" codecs="avc1.64002a" bandwidth="5000000" width="1920" height="1080" frameRate="50/1"></Representation>
+			<Representation id="1080p50" codecs="avc1.64002a" bandwidth="5100000" width="1920" height="1080" frameRate="50/1"></Representation>
 		</AdaptationSet>
 		<AdaptationSet id="1" contentType="audio" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1" bitstreamSwitching="true" lang="vie">
 			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
 			<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
-			<SegmentTemplate timescale="48000" initialization="cf610d30-b1d6-4575-839a-4da5c92dc7bd/$RepresentationID$-79389ee3-init.m4s" media="cf610d30-b1d6-4575-839a-4da5c92dc7bd/$RepresentationID$-79389ee3-$Number%01d$.m4s" startNumber="156">
-				<SegmentTimeline>
-					<S t="29759488" d="192512"/>
-					<S d="191488"/>
-					<S d="192512"/>
-					<S d="191488"/>
-					<S d="192512"/>
-					<S d="191488"/>
-					<S d="192512"/>
-					<S d="191488"/>
-					<S d="192512"/>
-					<S d="191488"/>
-				</SegmentTimeline>
+			<SegmentTemplate timescale="1000000" duration="2000000" availabilityTimeOffset="1.900" availabilityTimeComplete="false" initialization="9aaa4b4e-b227-4f62-8a54-62500f666401/$RepresentationID$-870ef9ff-init.m4s" media="9aaa4b4e-b227-4f62-8a54-62500f666401/$RepresentationID$-870ef9ff-$Number%01d$.m4s" startNumber="1">
 			</SegmentTemplate>
 			<Representation id="480p50_audio_0" codecs="mp4a.40.2" bandwidth="128000" audioSamplingRate="48000"></Representation>
 			<Representation id="720p50_audio_0" codecs="mp4a.40.2" bandwidth="128000" audioSamplingRate="48000"></Representation>
@@ -55,4 +40,3 @@
 		</AdaptationSet>
 	</Period>
 </MPD>
-1

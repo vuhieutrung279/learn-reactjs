@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" 
-	availabilityStartTime="1970-01-01T00:00:00Z" 
-	id="Config part of url maybe?" 
-	maxSegmentDuration="PT8S" 
-	minBufferTime="PT1.0S" 
-	minimumUpdatePeriod="PT500S" 
-	profiles="urn:mpeg:dash:profile:full:2011,http://www.dashif.org/guidelines/low-latency-live-v5" 
-	publishTime="2023-07-21T07:17:11Z" 
-	timeShiftBufferDepth="PT20.0S" 
-	type="dynamic">
- <BaseURL>https://livesim.dashif.org/livesim/sts_1689923830/sid_95b76c07/chunkdur_1/ato_7/testpic4_8s/</BaseURL>
-<ServiceDescription id="0">
-<Latency max="6000" min="2000" referenceId="0" target="4000" />
-<PlaybackRate max="1.04" min="0.96" />
-</ServiceDescription>
-<Period id="p0" start="PT0S">
-  <AdaptationSet contentType="audio" lang="en" segmentAlignment="true">
-   <ProducerReferenceTime id="0" presentationTime="0" type="encoder" wallClockTime="1970-01-01T00:00:00">
-<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-iso:2014" value="http://time.akamai.com/?iso" />
-</ProducerReferenceTime>
-<SegmentTemplate availabilityTimeComplete="false" availabilityTimeOffset="7.000000" duration="384000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/$Number$.m4s" startNumber="0" timescale="48000" />
-   <Representation audioSamplingRate="48000" bandwidth="36997" codecs="mp4a.40.2" id="A48" mimeType="audio/mp4" startWithSAP="1">
-    <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
-   </Representation>
-  </AdaptationSet>
-  <AdaptationSet contentType="video" maxFrameRate="30" maxHeight="360" maxWidth="640" par="16:9" segmentAlignment="true">
-   <ProducerReferenceTime id="0" presentationTime="0" type="encoder" wallClockTime="1970-01-01T00:00:00">
-<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-iso:2014" value="http://time.akamai.com/?iso" />
-</ProducerReferenceTime>
-<SegmentTemplate availabilityTimeComplete="false" availabilityTimeOffset="7.000000" duration="122880" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/$Number$.m4s" startNumber="0" timescale="15360" />
-   <Representation bandwidth="303780" codecs="avc1.64001e" frameRate="30" height="360" id="V300" mimeType="video/mp4" sar="1:1" startWithSAP="1" width="640" />
-  </AdaptationSet>
- </Period>
-<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-iso:2014" value="http://time.akamai.com/?iso" />
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:cenc="urn:mpeg:cenc:2013"
+	xmlns:mspr="urn:microsoft:playready"
+	xmlns:scte35="http://www.scte.org/schemas/35/2016"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="dynamic"
+	minimumUpdatePeriod="PT500S"
+	availabilityStartTime="2023-07-24T07:46:42.173Z"
+	publishTime="2023-07-24T08:21:20.193Z"
+	timeShiftBufferDepth="PT20.0S"
+	minBufferTime="PT1.0S"
+	channelId="25bea8b4-a15d-4328-bd31-f99347eb93d8"
+	targetId="9aaa4b4e-b227-4f62-8a54-62500f666401"
+	appId="9804be53-f978-4ac0-af28-19f6e0cbffef"
+	streamMediaId="989AFDB388F3976895CFBD91C7A2B037"
+	streamDenied="MTIz"
+	streamSignal="3C0FDFFB94B2E657C49746CC682F9FFE">
+	<BaseURL>https://kplus-livecdn.fptplay.net/live/k-sport2-test/live/</BaseURL>
+	<ServiceDescription id="0">
+		<Latency min="2000" max="5000" target="3000" referenceId="0"/>
+		<PlaybackRate min="0.93" max="1.07"/>
+	</ServiceDescription>
+	<Period id="20230724074639" start="PT0.0S">
+		<AdaptationSet id="0" contentType="video" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" bitstreamSwitching="true">
+			<ProducerReferenceTime id="0" type="encoder" wallClockTime="2023-07-24T07:46:42.173Z" presentationTime="0">
+				<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-xsdate:2014" value="https://time.akamai.com?iso&amp;ms"/>
+			</ProducerReferenceTime>
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+			<SegmentTemplate timescale="1000000" duration="2000000" availabilityTimeOffset="1.900" availabilityTimeComplete="false" initialization="$RepresentationID$-c94d6287-init.m4s" media="$RepresentationID$-c94d6287-$Number%01d$.m4s" startNumber="1">
+			</SegmentTemplate>
+			<Representation id="480p50" codecs="avc1.64002a" bandwidth="1500000" width="854" height="480" frameRate="50/1"></Representation>
+			<Representation id="720p50" codecs="avc1.64002a" bandwidth="3700000" width="1280" height="720" frameRate="50/1"></Representation>
+			<Representation id="1080p50" codecs="avc1.64002a" bandwidth="5000000" width="1920" height="1080" frameRate="50/1"></Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1" bitstreamSwitching="true" lang="vie">
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+			<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+			<SegmentTemplate timescale="1000000" duration="2000000" availabilityTimeOffset="1.900" availabilityTimeComplete="false" initialization="$RepresentationID$-c94d6287-init.m4s" media="$RepresentationID$-c94d6287-$Number%01d$.m4s" startNumber="1">
+			</SegmentTemplate>
+			<Representation id="480p50_audio_0" codecs="mp4a.40.2" bandwidth="129000" audioSamplingRate="48000"></Representation>
+			<Representation id="720p50_audio_0" codecs="mp4a.40.2" bandwidth="129000" audioSamplingRate="48000"></Representation>
+			<Representation id="1080p50_audio_0" codecs="mp4a.40.2" bandwidth="129000" audioSamplingRate="48000"></Representation>
+		</AdaptationSet>
+	</Period>
+	<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-xsdate:2014" value="https://time.akamai.com?iso&amp;ms"/>
 </MPD>

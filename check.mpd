@@ -18,8 +18,7 @@
 	appId="9804be53-f978-4ac0-af28-19f6e0cbffef"
 	streamMediaId="989AFDB388F3976895CFBD91C7A2B037"
 	streamDenied="MTIz"
-	streamSignal="3C0FDFFB94B2E657C49746CC682F9FFE"
-	suggestedPresentationDelay="PT16.0S">
+	streamSignal="3C0FDFFB94B2E657C49746CC682F9FFE">
 	<BaseURL>https://kplus-livecdn.fptplay.net/channel/k-sport2-test/live/</BaseURL>
 	<ServiceDescription id="0">
 		<Latency min="2000" max="5000" target="3000" referenceId="0"/>

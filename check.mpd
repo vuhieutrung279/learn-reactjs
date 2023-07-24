@@ -8,17 +8,18 @@
 	xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd"
 	profiles="urn:mpeg:dash:profile:isoff-live:2011"
 	type="dynamic"
-	minimumUpdatePeriod="PT500S"
+	minimumUpdatePeriod="PT4S"
 	availabilityStartTime="2023-07-24T07:46:42.173Z"
 	publishTime="2023-07-24T08:21:20.193Z"
-	timeShiftBufferDepth="PT20.0S"
-	minBufferTime="PT1.0S"
+	timeShiftBufferDepth="PT40.0S"
+	minBufferTime="PT4.0S"
 	channelId="25bea8b4-a15d-4328-bd31-f99347eb93d8"
 	targetId="9aaa4b4e-b227-4f62-8a54-62500f666401"
 	appId="9804be53-f978-4ac0-af28-19f6e0cbffef"
 	streamMediaId="989AFDB388F3976895CFBD91C7A2B037"
 	streamDenied="MTIz"
-	streamSignal="3C0FDFFB94B2E657C49746CC682F9FFE">
+	streamSignal="3C0FDFFB94B2E657C49746CC682F9FFE"
+	suggestedPresentationDelay="PT16.0S">
 	<BaseURL>https://kplus-livecdn.fptplay.net/channel/k-sport2-test/live/</BaseURL>
 	<ServiceDescription id="0">
 		<Latency min="2000" max="5000" target="3000" referenceId="0"/>
